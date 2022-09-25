@@ -1,0 +1,80 @@
+body {
+	font-family: system-ui;
+	background-color: #e5ebeb;
+	margin: 0;
+}
+
+.top {
+	color: #0f313d;
+	text-align: center;
+	vertical-align: middle; 
+
+}
+
+
+.donate {
+	
+	background-image: url("../pic/puppy kitten heart.jpg");
+	background-size: cover;
+}	
+
+h1,p,h2 {
+	color: #dd7642;
+	margin-left: 30px;
+	font-size: 25px;
+	margin-right: 30px;
+}
+
+input {
+	width: 30%;
+    padding: 10px;
+    margin: 1px 30px 1px 30px;
+    border-radius: 25px;
+}
+
+label {
+	color: #0f313d;
+	margin-left: 45px;
+	font-weight: bold;
+}
+
+
+.btn {
+	background-color: #dd7642;
+	color: #0f313d; 
+	width: 37%;
+	font-size: 25px;
+	border-radius: 25px;
+
+}
+
+.PETS {
+	background-image: url("../pic/puppy.jpg");
+	background-size: cover;
+	margin: 0;
+	height: 500px;
+	text-align: right;
+	font-size: 30px;
+	text-shadow: black 0 -2px;
+}
+
+img {
+	width: 100%;
+}
+
+.adopt {
+	background-image: url("../pic/catdog.jpg");
+	background-size: cover;
+	height: 500px;
+	margin: 0;
+	color: #0f313d;
+	font-weight: bold;
+	text-shadow: -2px 0 white, 0 2px white, 2px 0 white, 0 -2px white;
+}
+
+.radio {
+	padding: 5px;
+    margin: 1px 1px 1px 1px;
+    width: auto;
+}
+
