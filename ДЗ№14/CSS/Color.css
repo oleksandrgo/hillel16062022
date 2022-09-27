@@ -1,0 +1,292 @@
+body{
+	background-image: url(https://www.depo.ua/uploads/366219/conversions/127938054912f3f60cb58e0f4757411c-wide-big.jpg);
+}
+.one{
+	color: red; 
+	font-size: 100px;
+	background-color: yellow;
+	text-decoration: underline;
+}
+.two{
+	border: 20px solid black;
+}
+.three{
+	color: red; 
+	font-size: 50px;
+	text-decoration: underline;
+}
+.four{
+	border: 20px solid black;
+}
+.five {
+	color: red; 
+	font-size: 70px;
+	background-color: yellow;
+	text-decoration: underline;
+	background-color: yellow;
+}
+.six{
+	color: red; 
+	font-size: 50px;
+	text-decoration: underline;
+}
+h1:hover{
+	color: black;
+}
+h2:hover{
+	color: black
+}
+.seven{
+	border: 20px solid black;
+}
+.eight{
+	color: red; 
+	font-size: 50px;
+	text-decoration: underline;
+}
+.nine{
+	border: 20px solid black;
+}
+.ten{
+	border: 20px solid black;
+}
+.eleven{
+	color: red; 
+	font-size: 50px;
+	text-decoration: underline;
+}
+.twelve{
+	color: red; 
+	font-size: 30px;
+	text-decoration: underline;
+}
+.thirteen{
+	color: red; 
+	font-size: 50px;
+	text-decoration: underline;
+}
+.fourteen{
+	border: 20px solid black;
+}
+.fifteen{
+	color: red; 
+	font-size: 50px;
+	text-decoration: underline;
+}
+.sixteen{
+	color: red; 
+	font-size: 30px;
+	text-decoration: underline;
+}
+.seventeen{
+	color: red; 
+	font-size: 50px;
+	text-decoration: underline;
+}
+.eighteen{
+	border: 20px solid black;
+}
+.nineteen{
+	color: red; 
+	font-size: 50px;
+	text-decoration: underline;
+}
+.twenty{
+	border: 20px solid black;
+}
+.a{
+	color: red; 
+	font-size: 50px;
+	text-decoration: underline;
+}
+.b{
+	border: 20px solid black;
+}
+.c{
+	color: red; 
+	font-size: 50px;
+	text-decoration: underline;
+}
+.d{
+	color: red; 
+	font-size: 40px;
+	text-decoration: underline;
+}
+.e{
+	border: 20px solid black;
+}
+.f{
+	border: 20px solid black;
+}
+.g{
+	color: red; 
+	font-size: 50px;
+	text-decoration: underline;
+}
+.h{
+	color: red; 
+	font-size: 50px;
+	text-decoration: underline;
+}
+.i{
+	color: red; 
+	font-size: 50px;
+	text-decoration: underline;
+}
+.j{
+	border: 20px solid black;
+}
+.k{
+	color: red; 
+	font-size: 50px;
+	text-decoration: underline;
+}
+.l{
+	border: 20px solid black;
+}
+.m{
+	color: red; 
+	font-size: 50px;
+	text-decoration: underline;
+}
+.n{
+	border: 20px solid black;
+}
+.o{
+	color: red; 
+	font-size: 50px;
+	text-decoration: underline;
+}
+.p{
+	color: red; 
+	font-size: 30px;
+	text-decoration: underline;
+}
+.q{
+	color: red; 
+	font-size: 50px;
+	text-decoration: underline;
+}
+.r{
+	border: 20px solid black;
+}
+.s{
+	color: red; 
+	font-size: 80px;
+	background-color: yellow;
+	text-decoration: underline;
+}
+#flex{
+	display: flex;
+	justify-content: center;
+}
+.box{
+	border: 20px solid black;
+	width: 1000px;
+	height: 50px;
+	padding: 10px;
+	margin: 10px;
+    color: red; 
+	font-size: 30px;
+	background-color: yellow;
+	text-decoration: underline;
+}
+.t{
+	color: red; 
+	font-size: 50px;
+	text-decoration: underline;
+}
+.u{
+	color: red; 
+	font-size: 50px;
+	text-decoration: underline;
+}
+.v{
+	color: red; 
+	font-size: 50px;
+	text-decoration: underline;
+}
+.w{
+	color: red; 
+	font-size: 40px;
+	text-decoration: underline;
+}
+#man{
+	display: flex;
+	justify-content: center;
+}
+.dive{
+	border: 20px solid black;
+	width: 500px;
+	height: 50px;
+	padding: 10px;
+	margin: 10px;
+    color: red; 
+	font-size: 30px;
+	background-color: yellow;
+	text-decoration: underline;
+}
+.x{
+	color: red; 
+	font-size: 50px;
+	text-decoration: underline;
+}
+.y{
+	color: red; 
+	font-size: 40px;
+	text-decoration: underline;
+}
+.pay{
+	border: 20px solid black;
+	width: 500px;
+	height: 100px;
+	padding: 10px;
+	margin: 10px;
+    color: red; 
+	font-size: 30px;
+	background-color: yellow;
+}
+.qw{
+	color: red; 
+	font-size: 40px;
+	text-decoration: underline;
+}
+.z{
+	color: red; 
+	font-size: 70px;
+	text-decoration: underline;
+	background-color: yellow;
+}
+.er{
+	color: red; 
+	font-size: 50px;
+	text-decoration: underline;
+}
+.rt{
+	border: 20px solid black;
+}
+.ty{
+	color: red; 
+	font-size: 100px;
+	text-decoration: underline;
+	background-color: yellow;
+}
+.yu{
+	color: red; 
+	font-size: 50px;
+	text-decoration: underline;
+}
+#sd{
+	display: flex;
+	justify-content: center;
+}
+.fd{
+	border: 20px solid black;
+	width: 500px;
+	height: 100px;
+	padding: 10px;
+	margin: 10px;
+    color: red; 
+	font-size: 30px;
+	background-color: blue;
+}
