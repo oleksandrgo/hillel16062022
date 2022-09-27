@@ -1,0 +1,78 @@
+body{
+background-image: url(https://funart.pro/uploads/posts/2021-04/1618034371_25-p-oboi-milie-zaichiki-28.jpg);}
+
+.header{
+color: purple;
+fond-size: 30px;
+text-align: center;
+text-decoration: underline;
+}
+
+.first{
+color: red;
+font-size: x-large;
+text-align: center;
+}
+
+#title {
+color: purple;	
+}
+
+[title~=man] {
+  border: 5px solid pink;}
+
+ [title~=bonnet] {
+  border: 5px solid pink;}
+
+[title~=bodysuit] {
+  border: 5px solid lightblue;}
+
+[title~=panties] {
+  border: 5px solid lightblue;}
+
+.header1{
+background-color: pink;
+width: 540px;
+border: 10px solid green;
+padding: 20px;
+margin: 2px;
+text-align: center;
+}
+
+.button{
+background-color: pink;
+border: 3px solid green;
+color: white;
+padding: 15px 32px;
+text-align: center;
+text-decoration: inherit;
+display: inline-block;
+font-size: 25px;
+margin: 4px 2px;
+cursor: pointer;
+margin-left: 100px;
+text-align: left;
+
+}
+/*background-color: green;
+border: none;
+color: white;
+padding: 15px 32px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 25px;
+margin: 4px 2px;
+cursor: pointer;
+margin-left: 100px;
+text-align: left;*/
+
+#feedback{
+margin-right: 50px;
+text-align: right;
+}
+
+div {
+margin-right: 50px;
+text-align: right
+}
