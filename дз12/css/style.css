@@ -1,0 +1,78 @@
+body {background-image: url("https://img.freepik.com/free-vector/hand-painted-watercolor-pastel-sky-background_23-2148902771.jpg?w=2000");
+background-size: cover;
+font: bold italic 16px/20px Bradley Hand, cursive,sans-serif;f;
+text-shadow: 2px 4px 3px rgba(0,0,0,0.3)}
+
+div > p{
+background-color: #f569d9;
+}
+
+.header{
+color: red;
+fond-size: 30px;
+text-align: center;
+font: italic 20px/23px sans-serif;f
+text-decoration: overline;
+}
+
+.box{
+	border:2px groove #3e574a;
+	width:500px;
+	height:400px;
+	padding:8px;
+	margin:4%;
+	box-shadow: 4px 8px #07e874;
+}	
+
+.box1 {
+  border: 10px dotted #07e874;
+  width:400px;
+	height:380px;
+	padding:8px;
+	margin:4%;
+  border-image-slice: 2; 
+}
+
+.box2 {
+  border: 10px dashed #07e874;
+  width:400px;
+	height:300px;
+	padding:8px;
+	margin:4%;
+  border-image-slice: 1; 
+}
+
+
+.box3 {
+  border: 10px groove #07e874;
+  width:400px;
+	height:300px;
+	padding:8px;
+	margin:4%;
+  border-image-slice: 1; 
+}
+
+.box4 {
+  border: 10px outset #07e874;
+  width:1290px;
+	height:720px;
+	padding:8px;
+	margin:4%;
+  border-image-slice: 1; 
+}
+
+#title {
+color: Blue;	
+}
+
+#title2 {
+color: green;	
+font: italic 20px/23px sans-serif;f
+}
+
+button {
+	border: 1px solid white;
+	background: #07e874;
+	font-size: 26px;
+  font: bold italic 25px/28px Bradley Hand, cursive,sans-serif;f;
+  text-shadow: 1px 2px 2px rgba(0,0,0,0.3)}
