@@ -1,0 +1,63 @@
+*{font-family: helvetica, arial, sans-serif;}
+
+
+body {
+  background-color: #9CB071;
+}
+h1 {
+  color: blue;
+}
+p {
+  color: red;
+}
+h1,img,select {
+	margin-left: 20%
+}
+h2,textarea  {
+	margin-left: 50%
+}
+/*<button id="color">Send</button>
+
+<style>
+  #color {
+    transition-property: background-color;
+    transition-duration: 3s;
+  }
+</style>
+
+<script>
+  color.onclick = function() {
+    this.style.backgroundColor = 'red';
+  };
+</script>
+.animated {
+  transition-property: background-color
+  transition-duration: 3s;
+}
+
+<button id="growing">Send</button>
+
+<style>
+#growing {
+  transition: font-size 3s, color 2s;
+}
+</style>
+
+<script>
+growing.onclick = function() {
+  this.style.fontSize = '36px';
+  this.style.color = 'red';
+};
+</script>*/
+#Write:hover{
+	color: red;
+}
+button:hover{
+	color: #800517;
+}
+li,a:hover{
+	color: aqua;
+}
+textarea:hover{
+	background-color: #FFDFDD
+}
