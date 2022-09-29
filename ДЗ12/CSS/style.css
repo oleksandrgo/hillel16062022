@@ -1,0 +1,22 @@
+body{
+	background-image: url("https://funart.pro/uploads/posts/2021-04/1618608750_19-funart_pro-p-oboi-fon-zhelto-goluboi-fon-19.jpg");
+	background-size: cover;
+}
+
+.image-center{
+	display: block;
+	margin: auto;
+}
+
+
+
+.heroes{text-align: center;}
+
+
+.cards{display: grid;
+grid-template-columns: repeat(auto-fill,380px);
+column-gap: 50px;
+grid-row-gap: 50px;
+justify-content: center;
+}
+
