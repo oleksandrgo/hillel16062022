@@ -1,0 +1,37 @@
+.first{text-align: center;}
+.second{font-weight: 900;}
+.Three{font-style: italic;}
+.Four{font-style: italic;}
+.Five{font-style: italic;}
+.foto1{overflow: hidden; width: 700px;}
+.foto2{overflow: hidden; width: 700px;}
+.foto3{overflow: hidden; width: 700px;}
+.foto4{overflow: hidden; width: 700px;}
+.foto5{overflow: hidden; width: 700px;}
+.Seven{background-color: #ffff0033;
+color: black;
+display: block;
+height: 300px;
+left: 0;
+position: absolute;
+width: 100%;}
+.six{background-color: black;
+color: white;
+display: block;
+height: 150px;
+left: 0;
+position: absolute;
+width: 100%;
+text-align: right;}
+*{
+    padding: 10px;
+    margin: 0px;
+}
+ol{text-align: justify;}
+.nine{font-style: italic;}
+.ten{font-style: italic;}
+.eleven{font-style: italic;}
+.twelve{text-align: right;}
+.thirteen{background-color: #00ffff3d;}
+.fifteen{background-color: #00ffff0f;
+display: block;}
