@@ -1,0 +1,138 @@
+// Сделать валидацию для вашей формы
+// 1. Имя (Длина 2 - 20 только английские)
+// 2. Емейл проверить что там длина 6 -12 символов(англиские) 
+// до @ и потом почта gmail.com или ukr.net
+// 3. Мобильный телефон 380 + 50|63|66|67|68|91|92|93|97| 96 + 7 digits
+
+// В итоге мы должны получить alert c сообщением "Мы услышим вас" или
+//  "Мы вас не слышим"
+
+
+
+// ПОЛУЧЕНИЕ ДАННЫХ С ПОЛЕЙ
+// let name = document.querySelector("#userName").value;
+// console.log(name);
+// let email = document.querySelector("#userEmail").value;
+// console.log(email);
+// let phone = document.querySelector("#userPhone").value;
+// console.log(phone);
+
+
+// ПРОВЕРКИ
+// проверка имени пользователя
+// let name = "Sophia"
+// let checkName = /^[a-zA-Z]{2,20}$/;
+// if (checkName.test(name)){
+// 	console.log("ok");
+// } else {
+// 	console.log("wron");
+// }
+// let name = "Sergey";
+
+// function validName (name) {
+// 	checkName = /^[a-zA-Z]{2,20}$/;
+// if (checkName.test(name)){
+// 	return true;
+// } else {
+// 	return false;
+// }
+// };
+// console.log(validName(name));
+//
+
+
+// 
+// проверка email
+// let email = "345Alex@gmail.com";
+// //
+// function validEmail (email){
+// 	checkEmail = /([\w]{6,12})+@+gmail.com|ukr.net/;
+// 	if(checkEmail.test(email)){
+// 		return true;
+// 	} else {
+// 		return false;
+// 	}
+// 	}; 
+// console.log(validEmail(email)) 
+
+
+// 
+// проверка номера телефона (!!!РАБОТАЕТ!!!)
+// let phone = "380979013673"
+
+// function validPhone (phone) {
+// 	checkPhone = /^((380)+(50|63|66|67|68|91|92|93|97|96)+([0-9]){7})$/;
+// 	if(checkPhone.test(phone)){
+// 		return true;
+// 	} else {
+// 		return false;
+// 	}
+// };
+// console.log(validPhone(phone));
+
+// последняя проверка, если все три поля true то алерт (!!!работает!!!)
+// let a = validName(name);
+// let b = validEmail(email);
+// let c = validPhone(phone);
+// if(a == true && b == true && c == true){console.log("Мы услышим вас")} else {console.log("Мы вас не слышим")}
+// 	
+// 
+
+function readForm(){
+name = document.querySelector("#userName").value
+
+email = document.querySelector("#userEmail").value
+
+phone = document.querySelector("#userPhone").value
+}
+
+// name = "Sergey"
+// email = "favors@gmail.com"
+// phone = "380979013673"
+
+
+
+function validName (name) {
+	checkName = /^[a-zA-Z]{2,20}$/;
+if (checkName.test(name)){
+	return true;
+} else {
+	return false;
+}
+};
+
+// validName(name)
+
+
+function validEmail (email){
+	checkEmail = /([\w]{6,12})+@+gmail.com|ukr.net/;
+	if(checkEmail.test(email)){
+		return true;
+	} else {
+		return false;
+	}
+	};
+
+// validEmail(email)
+
+function validPhone (phone) {
+	checkPhone = /^((380)+(50|63|66|67|68|91|92|93|97|96)+([0-9]){7})$/;
+	if(checkPhone.test(phone)){
+		return true;
+	} else {
+		return false;
+	}
+};
+
+// validPhone(phone)
+
+// if(validName(name) == true && validEmail(email) == true && validPhone(phone) == true){console.log("Мы услышим вас")} else {console.log("Мы вас не слышим")}
+
+
+
+function validFunction() {
+    if(validName(name) == true && validEmail(email) == true && validPhone(phone) == true)
+  	{alert("Мы услышим вас")} else {alert("Мы вас не слышим")}
+}
+
+// validFunction(name, email, phone);

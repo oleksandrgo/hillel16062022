@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	
+</head>
+<body>
+
+<form name="form" method="post" id="form_message">
+		<h2>Форма обратной связи.</h2>
+		<p> <div class="titles">Ваше имя*</div> <input class="input" name="name" id="userName" type="text"/> </p>
+		
+		<p> <div class="titles">Email*</div> <input class="input" name="email" id="userEmail" type="email"/> </p>
+		 
+		<p> <div class="titles">Телефон</div> <input class="input" name="phone" id="userPhone" type="number"/> </p>
+		 
+		<p> <div class="titles">Текст сообщения:</div><textarea name="message" id="userMessage" cols="22" rows="5" /></textarea></p>
+		<!-- <p><input id="submit" value="Отправить" onclick="validFunction()" type="submit" /></p> -->
+		<button type="submit" id="submit" onmouseover="readForm()" onclick="validFunction()" style="width:185px;height:100px" >Отправить</button>	
+	</form>
+<script type="text/javascript" src="script/script.js"></script>
+
+</body>
+</html>
