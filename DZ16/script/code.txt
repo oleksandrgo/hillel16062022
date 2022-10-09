@@ -135,4 +135,9 @@ function validFunction() {
   	{alert("Мы услышим вас")} else {alert("Мы вас не слышим")}
 }
 
+function validFunction() {
+    if(validName(name) && validEmail(email) && validPhone(phone))
+  	{alert("Мы услышим вас")} else {alert("Мы вас не слышим")}
+}
+
 // validFunction(name, email, phone);

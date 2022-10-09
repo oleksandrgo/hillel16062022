@@ -38,7 +38,7 @@ function validPhone (phone) {
 
 // функция проверяет, что вернули функции validEmail, validName, validPhone и выдает соответствующий алерт.
 function validFunction() {
-    if(validName(name) == true && validEmail(email) == true && validPhone(phone) == true)
+    if(validName(name) && validEmail(email) && validPhone(phone))
   	{alert("Мы услышим вас")} else {alert("Мы вас не слышим")}
 }
 
