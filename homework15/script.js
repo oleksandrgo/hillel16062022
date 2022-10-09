@@ -2,30 +2,40 @@
 
 
 //№1
-/*let a = prompt('Введите значение a');
-console.log(typeof a);
-let b = prompt('Введите значение b');
-console.log(typeof b);
-function dev(a,b){
-return parseInt(a)/parseInt(b);
+/*let a = 15;
+let b = 5;
+if(a % b === 0){
+ console.log ("Ділиться, результат ділення:" + (a/b));
+} 
+else {
+ console.log ("Ділиться з залишком:" + (a%b));
 }
-let devide = dev(a,b);
+*/
 
-console.log('Делится='+devide);
-console.log('Делится с остатком '+parseInt(a)%parseInt(b));*/
+/*let a = 12;
+let b = 5;
+if(a % b === 0){
+ console.log ("Ділиться, результат ділення :" + a/b);
+} 
+else {
+ console.log ("Ділиться з залишком:" + a%b);
+}*/
 
 
 
 //№2
-/*let str = " ";
-let star = "*";
-function tri(){
-for (let i = 0; i < 7; i++) {
-  str += star;
-  console.log(str);
+let lines = 7;
+let str = " ";
+let symbol = "*";
+
+function drawTriangle (lines,symbol) {
+ for (let i = 0; i < lines; i++) {
+  str += symbol;
+  console.log(str);}
 }
-}
-tri()*/
+
+drawTriangle (7,'*');
+
 
 //№3
 /*for (let x=0; x<100; x++){
