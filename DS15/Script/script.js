@@ -33,6 +33,6 @@ do {
 n = n/2;
 k++;
 }
-while (n>50);
+while (n>=50);
 console.log("Получится число " + n);
 console.log("Количество итераций " + k);
