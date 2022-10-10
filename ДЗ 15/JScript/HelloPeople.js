@@ -15,6 +15,8 @@ if (result != 0) {
   }
 }*/
 
+/*function decorate() {
+
 let star = "*";
 let str = " ";
 let lines = 7;
@@ -22,14 +24,13 @@ for (let i = 0; i < lines; i++) {
   str += star;
   console.log(str);
 }
-
-
-
-
-
+}
+decorate();*/
 
 /*for (let n = 1000, num = 0; n > 50; num++) {
 
 n /= 2;
     console.log( n );
+    console.log('счетчик цикла n='+num);
+	    
 }*/
