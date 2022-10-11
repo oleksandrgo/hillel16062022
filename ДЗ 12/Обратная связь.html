@@ -1,39 +1,38 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Обратная связь</title>
-	<link rel="stylesheet" type="text/css" href="css/style_feedback.css">
-	
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Обратная связь</title>
+  <link rel="stylesheet" type="text/css" href="css/style_feedback.css">
+  
 </head>
 <body>
 <h1 id="header">Форма обратной связи</h1>
-<form>
-	<p>
-		<label for="name">Имя пользователя:</label>
-		<input type="text" placeholder="Введите имя" id="name">
-	</p>
-	
-	<p>
-		<label for="useremail">Email</label>
-		<input type="email" placeholder="Введите почту" id="useremail">
-	</p>
+<form action="" onsubmit="return validate();">
+  <p>
+    <label for="name">Имя пользователя:</label>
+    <input type="text" placeholder="Введите имя" id="name" required minlength="2" maxlength="20">
+  </p>
+  
+  <p>
+    <label for="email">Email</label>
+    <input type="email" placeholder="Введите почту" id="email" required>
+  </p>
+
+    <p>
+    <label for="phone">Ваш телефон:</label>
+    <input type="number" placeholder="380---------" id="phone" required>
+  </p>
+   
+<button type="submit">Отправить</button>
 
 <p>
-		<label form="phone">Ваш телефон:</label>
-		<input type="number" placeholder="+38(---)-------" id="phone">
-	</p>
-<p>
-	<label for="comment">Текст комментария:</label><br>
-	<textarea cols="50" rows="10"></textarea>
-</p>
-<button>Отправить</button>
-
-<p>
-<button><a href="C:/Hillel_Git/hillel16062022/ДЗ 12/Index.html">Перейти на главную страницу</button>
+<button><a href="C:/Hillel_Git/hillel16062022/ДЗ 12/Index.html">Перейти на главную страницу</button></a>
 </p>
 
 </form>
+
+<script type="text/javascript" src="js/JavaScript.js"></script>
 </body>
 </html>
