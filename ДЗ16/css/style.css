@@ -1,0 +1,54 @@
+body{
+background-image: url("https://oir.mobi/uploads/posts/2021-03/1616587380_55-p-fon-grafika-62.jpg");
+background-size: cover;
+font: italic 1.2em "Fira Sans", serif;
+}
+
+div > p{
+background-color: #FFF0F5;
+}
+
+tr:nth-child(odd){
+background-color: #E0FFFF
+}
+
+.music{background-color: #8FBC8F
+}
+h1, h2 {text-align: center
+}
+
+#Attention{
+height: 42px;
+width: 1100px;	
+border: 2px solid #FF4500;
+}
+
+img[src^="picture"]{
+	text-align: center;
+	width: 1330px; 
+	height: 670px
+	}
+
+.box{
+	border:3px groove #7e3887d9;
+	width:720px;
+	height:720px;
+	padding:10px;
+	margin:5%;
+	box-shadow: 5px 10px #a84bb4;
+}	
+
+.center-img{
+  display: block;
+  margin: 0 auto;
+}
+
+#musicBox{text-align: center;
+}
+
+footer{
+text-align: center;
+font-size: 23px;
+background-color: #9370DB;
+
+}
