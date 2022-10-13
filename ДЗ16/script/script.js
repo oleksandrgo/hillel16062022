@@ -19,6 +19,7 @@ else
 return false;
 }};
 
+//console.log(validateName(name));
 
 function validateEmail(email)
 {
@@ -35,26 +36,21 @@ return false;
 
 function validatePhone(phone)
 {
-myPhone= /^((380)+(50|63|66|67|68|91|92|93|97|96)+([0-9]){7})$/;
+myPhone = /^((380)+(50|63|66|67|68|91|92|93|97|96)+([0-9]){7})$/;
+
 if(myPhone.test(phone))
 {
 return true;
 }
 else
 {
-phone.focus();
 return false;
 }};
 
-/*if (name == true) && (email == true) && (phone == true){alert("Мы услышим вас");
-} else {
-alert( 'Мы вас не слышим' );
-};*/
-
 function mainValidation()
 {
-if (validateName(name) == true && validateEmail(email) == true && validatePhone(phone) == true) {
+if (validateName(name) && validateEmail(email) && validatePhone(phone)) {
 		alert("Мы услышим вас")
 	} else {
-alert( 'Мы вас не слышим' )
+alert( "Мы вас не слышим" )
 }};
