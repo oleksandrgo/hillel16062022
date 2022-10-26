@@ -45,13 +45,13 @@ if(c !=0){
 //2.
 
 let lines = 5;
-let t = " ";
+let str = " ";
 let symbol = "*";
 
 function drawTriangle (lines,symbol) {
 	for (let d = 0; d < lines; d++) {
-  t += symbol;
-  console.log(t);}
+  str += symbol;
+  console.log(str);}
 }
 
 drawTriangle (5,'*');
