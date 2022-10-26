@@ -13,18 +13,18 @@ public class Main {
       int i = inputFigure.nextInt();
       System.out.println(i);*/
 
-       /*System.out.println("Введите число 1, 2 или 3: ");
+       System.out.println("Введите число 1, 2 или 3: ");
         Scanner inputFigure = new Scanner(System.in);
         int i = inputFigure.nextInt();
-        if (i <= 1) {
+        if (i == 1) {
             System.out.println("1");
-        } else if (i <= 2) {
+        } else if (i == 2) {
             System.out.println("2");
-        } else if (i <= 3) {
+        } else if (i == 3) {
             System.out.println("3");
         } else {
             System.out.println("Incorrect number");
-        }*/
+        }
 
        /*System.out.println("Введите число 1, 2 или 3: ");
         Scanner inputFigure = new Scanner(System.in);
