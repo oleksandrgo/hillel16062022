@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="66673a00-81da-4b49-9735-3c90a8a69623" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../DZ20/automation/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DZ20/automation/src/test/java/space/forstudy/qauto/MainTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,7 +21,8 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "G:/Мои документы/Учёба/Hillel/GIT/hillel16062022/DZ19/untitled"
   }
 }]]></component>
   <component name="RunManager">
