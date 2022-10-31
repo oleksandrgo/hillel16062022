@@ -10,7 +10,7 @@ public class JavaBase {
         System.out.println(Integer.toBinaryString(a));*/
         // System.out.println("Hello world");
 
-        java.lang.String list = "sdsghfkhjljkrtegfhgkdzfz";
+        /*java.lang.String list = "sdsghfkhjljkrtegfhgkdzfz";
         java.lang.String random = "";
         int length = 5;
 
@@ -27,7 +27,7 @@ public class JavaBase {
         System.out.println(random);
 
         //System.out.println(Integer.toBinaryString(a));
-        //System.out.println("result " + Integer.parseInt("1000001", 2));
+        //System.out.println("result " + Integer.parseInt("1000001", 2));*/
 
        /* int c; // обьявление переменной - обязательно ставить ;
         c = 5;*/ // инициализация переменой
