@@ -1,8 +1,10 @@
+import HW19Lirska.User;
+
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-
+        //*ДЗ18
         /*System.out.println("Введите число 1, 2 или 3: ");
         Scanner inputFigure = new Scanner(System.in);
         int i = inputFigure.nextInt();*/
@@ -47,8 +49,19 @@ public class Main {
         }
         System.out.println("Среднее арифметическое " +(sum/100));*/
 
+//*ДЗ19
 
-        
+        User user = new User ("servis0416@gmail.com", "Fasolka", "Fasolka");
+        user.name = "Olena";
+        user.lastName = "Lirska";
+        user.email = "servis0416@gmail.com";
+        user.password = "Fasolka";
+        user.reEnterPassword = "Fasolka";
+
+
+
+        System.out.println(user.reEnterPassword);
+
 
     }
 }
