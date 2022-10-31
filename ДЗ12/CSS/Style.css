@@ -8,7 +8,7 @@
 .foto3{overflow: hidden; width: 700px;}
 .foto4{overflow: hidden; width: 700px;}
 .foto5{overflow: hidden; width: 700px;}
-.Seven{background-color: #ffff0033;
+.seven{background-color: #ffff0033;
 color: black;
 display: block;
 height: 300px;
@@ -35,3 +35,18 @@ ol{text-align: justify;}
 .thirteen{background-color: #00ffff3d;}
 .fifteen{background-color: #00ffff0f;
 display: block;}
+
+.input.error {
+    border-color: red;
+}
+
+.input::placeholder {
+    color: red;
+}
+
+.checkbox__label {
+    user-select: none;
+}
+/*.checkbox__input.error + checkbox__label {
+    color: red;
+}*/
