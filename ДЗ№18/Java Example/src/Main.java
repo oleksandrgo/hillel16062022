@@ -18,10 +18,13 @@ public class Main {
 
         System.out.println("Метод switch");
         switch (i) {
-            case 1 -> System.out.println(i);
-            case 2 -> System.out.println(i);
-            case 3 -> System.out.println(i);
-            default -> System.out.println("Ошибка! Введенное число вне диапазона 1-3");
+            case 1: System.out.println(i);
+            break;
+            case 2: System.out.println(i);
+            break;
+            case 3: System.out.println(i);
+            break;
+            default: System.out.println("Ошибка! Введенное число вне диапазона 1-3");
         }
 // №2.Необходимо вывести на экран числа от 5 до 1. На экране должно быть:5 4 3 2 1.
 
@@ -42,13 +45,13 @@ public class Main {
 // №4. Найти среднее арефметическое суммы чисел от 1 до 100.
 
         System.out.println("Задание 4");
-        int d = 1;
-        int f = 100;
-        while (d <= 100) {
-            f += (d++);
-        }
-        System.out.println("Среднее арифметическое суммы всех чисел от 1 до 100 равно: " + f / d);
-
-
+        double d = 1;
+        double f = 0;
+        while (d<=100){
+            f = f+d;
+            d++;}
+        double a = f/(d-1);
+        System.out.println("Среднее арифметическое суммы всех чисел от 1 до 100 равно: "+a);
     }
 }
+
