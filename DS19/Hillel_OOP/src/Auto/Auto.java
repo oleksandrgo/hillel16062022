@@ -5,11 +5,11 @@ public class Auto {
     public String model;
     public int mileage;
 
-    public boolean isMileageCorrect(){
-        if(mileage>0 && mileage<999999){
-            return true;
+    public void checkMileage() {
+        if (this.mileage >= 0 && this.mileage <= 999999) {
+        } else {
+            System.out.println("Mileage is incorrect");
         }
-        return false;
     }
 
 

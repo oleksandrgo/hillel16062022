@@ -5,16 +5,13 @@ import Auto.Porshe;
 public class Main {
     public static void main(String[] args) {
 
-        User user = new User("khgl", "qwerty");
-        User user1 = new User("John", "Dou", "Qwerty@gmail.com", "qwerty", "qwerty");
-
-        System.out.println("Is email for user correct: " + user.isEmailCorrect());
-        System.out.println("Is email for user1 correct: " + user1.isEmailCorrect());
+        User user = new User("rlkm@tb", "qwerty");
+        User user1 = new User("John", "Dou", "Qwertygmail.com", "qwerty", "qwerty");
 
         Auto auto = new Auto();
-        auto.mileage = 9999;
+        auto.mileage = 7777777;
 
-        System.out.println("Is mileage correct: " + auto.isMileageCorrect());
+        auto.checkMileage();
 
         Porshe porshe = new Porshe();
         porshe.maxSpeed = 500;
