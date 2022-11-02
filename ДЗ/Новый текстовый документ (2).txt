@@ -1,0 +1,55 @@
+/*function validate(){
+var name = document.querySelector(".seven");
+var email = document.querySelector(".a email");
+var tel = document.querySelector(".a tel");
+
+var nameReg = new RegExp("^[A-z][a-z]{2,20}$");
+var telReg = new RegExp("^380(50|63|66|67|68|91|92|93|97|96)[0-9]{7}$");
+var emailReg = new RegExp("^[A-z][a-z]{6,12}@(gmail.com|ukr.net)$");
+if (!name.value.match(nameReg)) {
+   name.style.border = "2px solid red";
+   alert("Мы вас не слышим");  
+   return false;
+name.style.border = "0";
+} else if (!email.value.match(emailReg)) {
+   email.style.border = "2px solid red";
+   alert("Мы вас не слышим");
+   return false;
+email.style.border = "0";
+} else if (!tel.value.match(telReg)) {
+   tel.style.border = "2px solid red";
+   alert("Мы вас не слышим");
+   return false;
+tel.style.border = "0";
+} else {
+alert("Мы услышим вас");
+}
+}*/
+
+/*function validate(){
+var name = document.getElementById("FirstName");
+var email = document.getElementById("email");
+var tel = document.getElementById("tel");
+
+var nameReg = new RegExp("^[A-z][a-z]{2,20}$");
+var telReg = new RegExp("^380(50|63|66|67|68|91|92|93|97|96)[0-9]{7}$");
+var emailReg = new RegExp("^[A-z][a-z]{6,12}@(gmail.com|ukr.net)$");
+if (!name.value.match(nameReg)) {
+   name.style.border = "2px solid red";
+   alert('we dont hear you');
+   return false;
+}
+name.style.border = "0";
+if (!email.value.match(emailReg)) {
+   name.style.border = "2px solid red";
+   alert('we dont hear you');
+   return false;
+}
+email.style.border = "0";
+if (!tel.value.match(telReg)) {
+   tel.style.border = "2px solid red";
+   alert('we dont hear you');
+   return false;
+}
+tel.style.border = "0";
+alert('We hear you')};*/

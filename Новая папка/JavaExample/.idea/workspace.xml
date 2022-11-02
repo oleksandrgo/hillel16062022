@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c0e7da3b-0f6e-4a77-b707-0ff5555c140c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../../ДЗ19/JavaExample/src/DZ19/Car.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ДЗ19/JavaExample/src/DZ19/Heir.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ДЗ19/JavaExample/src/DZ19/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ДЗ19/JavaExample/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ДЗ19/JavaExample/src/Main1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ДЗ12/CSS/Style.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../ДЗ12/CSS/Style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ДЗ12/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../ДЗ12/index.html" afterDir="false" />
-    </list>
+    <list default="true" id="c0e7da3b-0f6e-4a77-b707-0ff5555c140c" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -37,17 +29,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Downloaded.Files.Path.Enabled": "false",
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "D:/Hillel/Git Hillel/hillel16062022/ДЗ19/JavaExample/src/Main.java"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Hillel/Git Hillel/hillel16062022/ДЗ19/JavaExample/src/Main.java&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="DZ19" />
