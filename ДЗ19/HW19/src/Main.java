@@ -5,11 +5,15 @@ import User.User;
 public class Main {
     public static void main(String[] args) {
 
-        User user = new User ("servis0416@gmail.com", "Fasolka", "Fasolka");
-        user.name = "Olena";
-        user.lastName = "Lirska";
+        User user = new User("Olena", "Lirska", "servis0416@gmail.com", "Fasolka", "Fasolka");
+        User user2 = new User("servis0416@gmail.com","Fasolka","Fasolka");
 
-        User.checkEmail("hgkjgg@");
+        System.out.println(user.name);
+        System.out.println(user2.email);
+
+        User.checkEmail("hgkjgg@vdsvsd");
+
+        //User.validEmail("sdffgs@");
 
         Car car = new Car("BMW","Q5",180);
         car.validMileage(275);
@@ -18,7 +22,6 @@ public class Main {
         Car carHeir = new CarHeir("AUDI", "TT",120);
         carHeir.validMileage(789);
         carHeir.permissibleSpeed(650);
-
 
     }
 

@@ -5,26 +5,25 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.safari.SafariDriver;
 
 public class MainTests {
     WebDriver driver;
 
-    @BeforeClass
+    /*@BeforeClass
     public static void configuration(){
         final String path = String.format("%s/bin/chromedriver.exe",
                 System.getProperty("user.dir"));
         System.setProperty("webdriver.chrome.driver", path);
-    }
+    }*/
 
     @Before
     public void precondition(){
-        driver = new ChromeDriver();
+        driver = new SafariDriver();
     }
-
 
     @Test
     public void test(){
-        System.out.println("HelLo world");
-        driver.get("https://www.google.com.ua/");
+        driver.get("https://guest:welcome2qauto@qauto.forstudy.space/");
     }
 }
