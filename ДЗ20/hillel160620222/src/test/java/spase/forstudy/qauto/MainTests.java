@@ -14,6 +14,8 @@ import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import javax.sql.rowset.serial.SQLOutputImpl;
+
 public class MainTests {
     WebDriver driver;
     WebDriverWait wait;
@@ -43,37 +45,40 @@ public class MainTests {
         wait.
                 until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[@class=\"btn btn-white btn-sidebar sidebar_btn -profile\"]"))).
                 click(); //кликаем Profile
+        Thread.sleep(2000);
+        WebElement profileName = driver.findElement(By.className("display-4"));
+        System.out.println(profileName.getText());
         wait.
-                until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[@class=\"btn btn-white btn-sidebar sidebar_btn\"]"))).
+                until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".btn-white"))).
                 click();//кликаем Garage
         wait.
-                until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[@class=\"btn btn-primary\"]"))).
+                until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".btn-primary"))).
                 click();//кликаем Add car
         driver.findElement(By.id("addCarMileage")).sendKeys("1");     //находим Mileage и вносим 1
         wait.
                 until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[text()=\"Add\"]"))).
                 click();
         wait.
-                until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[@class=\"car_add-expense btn btn-success\"]"))).
+                until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".car_add-expense.btn"))).
                 click();// кликаем Add fuel expense
         driver.findElement(By.id("addExpenseMileage")).sendKeys("5");     //находим Mileage
         driver.findElement(By.id("addExpenseLiters")).sendKeys("10");     //находим Liters
         driver.findElement(By.id("addExpenseTotalCost")).sendKeys("20");  //находим totalCost
         driver.findElement(By.xpath("//button[text()=\"Add\"]")).click();
         wait.
-                until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[@class=\"dropdown-toggle user-nav_toggle\"]"))).
+                until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".dropdown-toggle"))).
                 click(); //кликаем дропдаун My Profile
         wait.
                 until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[text()=\"Settings\"]"))).
                 click();// кликаем Settings
         wait.
-                until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[@class=\"btn btn-danger-bg\"]"))).
+                until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".btn-danger-bg"))).
                 click();//кликаем Remove my account
         wait.
                 until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[text()=\"Remove\"]"))).
-                click();// кликаем Remove на поп-апе :)
+                click();// кликаем Remove на поп-апе :)*/
         }
-        @After
+       @After
         public void postCondition(){
         driver.quit();
         }
