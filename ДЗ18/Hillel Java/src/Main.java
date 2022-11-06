@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class Main {
-     public static void main(String[] args) {
+     public static <User> void main(String[] args) {
 
   /*System.out.println("Введите число 1, 2 или 3: ");
         Scanner inputFigure = new Scanner(System.in);
@@ -45,18 +45,4 @@ public class Main {
             sum += i;
         }
         System.out.println("Среднее арифметическое " +(sum/100));*/
-
-         //*ДЗ19
-
-         User user = new User ("koroleva@gmail.com", "Qwerty12", "Qwerty12");
-         user.name = "Yulia";
-         user.lastName = "Koroleva";
-         user.email = "koroleva@gmail.com";
-         user.password = "Qwerty12";
-         user.reEnterPassword = "Qwerty12";
-
-
-
-         System.out.println(user.reEnterPassword);
-}
-        }
+     } }

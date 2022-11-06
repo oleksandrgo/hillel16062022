@@ -5,19 +5,6 @@ import User.User;
         public class Main {
             public static void main(String[] args) {
 
-                User user = new User ("koroleva@gmail.com", "Qwerty12", "Qwerty12");
-                user.name = "Yulia";
-                user.lastName = "Koroleva";
-                user.email = "koroleva@gmail.com";
-                user.password = "Qwerty12";
-                user.reEnterPassword = "Qwerty12";
-
-
-
-                System.out.println(user.reEnterPassword);
-            }
-        }
-
                 User user = new User("Yulia", "Koroleva", "koroleva@gmail.com", "Qwerty12", "Qwerty12");
                 User user2 = new User("koroleva@gmail.com", "Qwerty12", "Qwerty12");
 
@@ -39,5 +26,3 @@ import User.User;
             }
 
         }
-    }
-}

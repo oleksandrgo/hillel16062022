@@ -1,13 +1,16 @@
 package space.forstudent.qauto;
 
-import org.junit.Before;
-import org.junit.BeforeClass;
-import org.junit.Test;
+import org.junit.*;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class MainTests {
     WebDriver driver;
+    WebDriverWait wait;
 
     @BeforeClass
     public static void configuration (){
@@ -19,9 +22,83 @@ public class MainTests {
     @Before
     public void precondition(){
             driver = new ChromeDriver();
-}
-    @Test
-    public void test(){
-        driver.get("https://www.google.com/");
+wait = new WebDriverWait(driver, 5);
     }
+
+    @Test
+    public void test() throws InterruptedException {
+
+    //Создать пользователя
+        driver.get("https://guest:welcome2qauto@qauto.forstudy.space/");
+        driver.findElement(By.cssSelector(".btn-primary")).click();
+        driver.findElement(By.id("signupName")).sendKeys("Erica");
+        driver.findElement(By.id("signupLastName")).sendKeys("Smith");
+        driver.findElement(By.id("signupEmail")).sendKeys("registeredEmail", Math.floor(Math.random()*100000) + "@gmail.com");
+        driver.findElement(By.id("signupPassword")).sendKeys("Qwerty12");
+        driver.findElement(By.id("signupRepeatPassword")).sendKeys("Qwerty12");
+        driver.findElement(By.xpath("//button[@class=\"btn btn-primary\"]")).click();
+
+
+        wait.until
+         (ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[@class=\"btn btn-white btn-sidebar sidebar_btn -profile\"]"))).
+                click();
+
+    //Проверка name и lastName
+
+     /* Thread.sleep(2000);
+        driver.findElement(By.xpath("//button[@class=\"btn btn-white btn-sidebar sidebar_btn -profile -active\"]")).click();
+        wait.until (ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".profile_name.display-4")));
+        String profileName = driver.findElement(By.cssSelector(".display-4")).getText();
+        Assert.assertEquals("Имя/фамилия не совпадают","Erica Smith",profileName);*/
+
+       Thread.sleep(2000);
+       WebElement profileName = driver.findElement(By.className("display-4"));
+       System.out.println(profileName.getText());
+
+    //Добавить авто
+
+        String currentUrl = driver.getCurrentUrl();
+        System.out.println("Current url " + currentUrl);
+        String navigateToUserData = "https://qauto.forstudy.space/panel/garage";
+        driver.navigate().to(navigateToUserData);
+
+        /* driver.findElement(By.className("dropdown-toggle user-nav_toggle")).click();
+         wait.until
+        (ExpectedConditions.invisibilityOfElementLocated(By.xpath("//a[text()=\"Garage\"]")));
+        driver.findElement(By.xpath("//a[text()=\"Garage\"]")).click();*/
+
+
+        driver.findElement(By.className("btn-primary")).click();
+        driver.findElement(By.id("addCarMileage")).sendKeys("50");
+        wait.until
+               (ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[text()=\"Add\"]"))).
+                click();
+
+    //Добавить expenses этому авто
+
+        wait.until
+               (ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".car_add-expense.btn"))).
+                click();
+        driver.findElement(By.id("addExpenseMileage")).clear();
+        driver.findElement(By.id("addExpenseMileage")).sendKeys("100");
+        driver.findElement(By.id("addExpenseLiters")).sendKeys("60");
+        driver.findElement(By.id("addExpenseTotalCost")).sendKeys("300");
+        driver.findElement(By.xpath("//button[text()=\"Add\"]")).click();
+
+    //Удалить акаунт
+        Thread.sleep(2000);
+        wait.until
+               (ExpectedConditions.visibilityOfElementLocated(By.id("userNavDropdown"))).
+                click();
+        wait.until
+               (ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[text()=\"Settings\"]"))).
+                click();
+        wait.until
+               (ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".btn-danger-bg"))).
+                click();
+        driver.findElement(By.xpath("//button[text()=\"Remove\"]")).click();
+    }
+    @After
+     public void postCondition(){
+        driver.close();}
 }
