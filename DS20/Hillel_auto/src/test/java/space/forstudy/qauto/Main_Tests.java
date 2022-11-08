@@ -1,19 +1,23 @@
 package space.forstudy.qauto;
 
 import net.bytebuddy.utility.RandomString;
-import org.junit.After;
-import org.junit.Before;
-import org.junit.BeforeClass;
-import org.junit.Test;
+import org.junit.*;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.interactions.SendKeysAction;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import javax.lang.model.util.Elements;
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.KeyEvent;
 import java.util.List;
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
@@ -36,6 +40,9 @@ public class Main_Tests {
     @Test
     public void test(){
        driver.get("https://guest:welcome2qauto@qauto.forstudy.space/");
+
+        driver.manage().window().maximize();
+
        WebElement buttonSingUp = driver.findElement(By.className("btn-primary"));
         buttonSingUp.click();
 
@@ -64,10 +71,46 @@ public class Main_Tests {
 
         driver.findElement(By.cssSelector(".modal-footer>*")).click();
 
-        //driver.manage().timeouts().implicitlyWait(3000, TimeUnit.MICROSECONDS);
+        WebDriverWait wait = new WebDriverWait(driver,3);
+        wait.until(ExpectedConditions.urlContains("garage"));
 
+        driver.findElement(By.xpath("//a[@class='btn btn-white btn-sidebar sidebar_btn -profile']")).click();
 
-        driver.findElement(By.id("userNavDropdown")).click();
+        wait.until(ExpectedConditions.urlContains("profile"));
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".display-4")));
+
+        String expectedNameLastName = new String();
+        expectedNameLastName = randomName+" "+randomLastName;
+        String nameLastName = driver.findElement(By.cssSelector(".display-4")).getText();
+        Assert.assertEquals("Name and Last Name are not equals",nameLastName,expectedNameLastName);
+
+        driver.findElement(By.xpath("//a[@routerlink='garage']")).click();
+
+        driver.findElement(By.xpath("//button[@class='btn btn-primary']")).click();
+
+        driver.findElement(By.xpath("//input")).sendKeys("5");
+
+        wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@class='modal-footer d-flex justify-content-end']/button[2]")));
+
+        driver.findElement(By.xpath("//div[@class='modal-footer d-flex justify-content-end']/button[2]")).click();
+
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[@class='car_add-expense btn btn-success']")));
+
+        driver.findElement(By.xpath("//button[@class='car_add-expense btn btn-success']")).click();
+
+        driver.findElement(By.xpath("//input[@name='mileage']")).sendKeys(Keys.CLEAR,"10");
+
+        driver.findElement(By.xpath("//input[@name='liters']")).sendKeys("55");
+        driver.findElement(By.xpath("//input[@name='totalCost']")).sendKeys("55");
+
+        driver.findElement(By.xpath("//button[2][@class='btn btn-primary']")).click();
+
+        driver.findElement(By.xpath("//a[@routerlink='settings']")).click();
+
+        driver.findElement(By.xpath("//button[@class='btn btn-danger-bg']")).click();
+
+        driver.findElement(By.xpath("//button[@class='btn btn-danger']")).click();
+
 
 
 
