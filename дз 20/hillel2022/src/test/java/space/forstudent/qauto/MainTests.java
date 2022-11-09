@@ -27,8 +27,8 @@ public class MainTests {
     @Before
     public void precondition() {
         driver = new ChromeDriver();
-        driver.manage().timeouts().implicitlyWait(3000, TimeUnit.MICROSECONDS);
-        wait = new WebDriverWait(driver, 3);
+        driver.manage().timeouts().implicitlyWait(10000, TimeUnit.MICROSECONDS);
+        wait = new WebDriverWait(driver, 10);
     }
 
     @Test
@@ -44,47 +44,43 @@ public class MainTests {
         wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector(".btn-primary")));
         driver.findElement(By.xpath("//button[@class=\"btn btn-primary\"]")).click();
 
+        WebElement name = driver.findElement(By.id("signupLastName"));
+        final String EXPECTED_NAME = name.getText();
+        Assert.assertEquals("Текст не соответствует", EXPECTED_NAME, name.getText());
+
+        WebElement lastName = driver.findElement(By.id("signupLastName"));
+        final String EXPECTED_LASTNAME = lastName.getText();
+        Assert.assertEquals("Текст не соответствует", EXPECTED_LASTNAME, lastName.getText());
+
         wait.
                 until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[@class=\"btn btn-white btn-sidebar sidebar_btn -profile\"]"))).
                 click();                                                                                                //Profile
-        Thread.sleep(3000);
-        Assert.assertTrue(driver.findElement(By.className("profile_name")).getText().contains("Aleksandra Kravchuk"));
 
-        wait.
+        //Assert.assertTrue(driver.findElement(By.className("profile_name")).getText().contains("Aleksandra Kravchuk"));
+
+                wait.
                 until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[@class = \"btn btn-white btn-sidebar sidebar_btn\"]"))).
                 click();                                                                                                 //Garage
-        Thread.sleep(3000);
 
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".btn-primary"))).click();               //Car
-        Thread.sleep(3000);
         driver.findElement(By.id("addCarBrand")).sendKeys("BMW", Keys.TAB);
-        Thread.sleep(2000);
         driver.findElement(By.id("addCarModel")).sendKeys("X5", Keys.TAB);
-        Thread.sleep(2000);
         driver.findElement(By.id("addCarMileage")).sendKeys("1", Keys.TAB);
-        Thread.sleep(2000);
         wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[text()=\"Add\"]")));
         driver.findElement(By.xpath("//button[text()=\"Add\"]")).click();
-        Thread.sleep(3000);
+
 
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".car_add-expense.btn"))).click();      //Add fuel expense
-        Thread.sleep(3000);
         driver.findElement(By.id("addExpenseMileage")).sendKeys("1", Keys.TAB);
-        Thread.sleep(1000);
         driver.findElement(By.id("addExpenseLiters")).sendKeys("20", Keys.TAB);
-        Thread.sleep(1000);
         driver.findElement(By.id("addExpenseTotalCost")).sendKeys("500", Keys.TAB);
-        Thread.sleep(1000);
         driver.findElement(By.xpath("//button[text()=\"Add\"]")).click();
-        Thread.sleep(3000);
 
         wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector(".dropdown-toggle"))).click();                // Settings
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[text()=\"Settings\"]"))).click();
-        Thread.sleep(1000);
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".btn-danger-bg"))).click();
-        Thread.sleep(1000);
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".btn-danger"))).click();
-        Thread.sleep(1000);
+
 
 
 
