@@ -44,7 +44,7 @@ public class MainTests {
         wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector(".btn-primary")));
         driver.findElement(By.xpath("//button[@class=\"btn btn-primary\"]")).click();
 
-        WebElement name = driver.findElement(By.id("signupLastName"));
+        WebElement name = driver.findElement(By.id("signupName"));
         final String EXPECTED_NAME = name.getText();
         Assert.assertEquals("Текст не соответствует", EXPECTED_NAME, name.getText());
 
