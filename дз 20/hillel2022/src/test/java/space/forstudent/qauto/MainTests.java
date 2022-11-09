@@ -48,6 +48,7 @@ public class MainTests {
                 until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[@class=\"btn btn-white btn-sidebar sidebar_btn -profile\"]"))).
                 click();                                                                                                //Profile
         Thread.sleep(3000);
+        Assert.assertTrue(driver.findElement(By.className("profile_name")).getText().contains("Aleksandra Kravchuk"));
 
         wait.
                 until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[@class = \"btn btn-white btn-sidebar sidebar_btn\"]"))).
@@ -84,11 +85,6 @@ public class MainTests {
         Thread.sleep(1000);
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".btn-danger"))).click();
         Thread.sleep(1000);
-
-        /*WebElement profile = driver.findElement(By.xpath("//a[@class=\"btn btn-white btn-sidebar sidebar_btn -profile\"]"));
-        String profileText = (profile.getText());
-        final String EXPECTED_PROFILE = "Aleksandra Kravchuk";
-        Assert.assertEquals("Текст не соответствует", EXPECTED_PROFILE, profileText);*/
 
 
 
