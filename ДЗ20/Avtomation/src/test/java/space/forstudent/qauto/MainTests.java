@@ -3,7 +3,6 @@ package space.forstudent.qauto;
 import org.junit.*;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -22,7 +21,7 @@ public class MainTests {
     @Before
     public void precondition(){
             driver = new ChromeDriver();
-wait = new WebDriverWait(driver, 5);
+            wait = new WebDriverWait(driver, 5);
     }
 
     @Test
@@ -38,35 +37,29 @@ wait = new WebDriverWait(driver, 5);
         driver.findElement(By.id("signupRepeatPassword")).sendKeys("Qwerty12");
         driver.findElement(By.xpath("//button[@class=\"btn btn-primary\"]")).click();
 
-
         wait.until
-         (ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[@class=\"btn btn-white btn-sidebar sidebar_btn -profile\"]"))).
-                click();
+        (ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[@class=\"btn btn-white btn-sidebar sidebar_btn -profile\"]"))).
+        click(); //нажать кнопку Профиля слева
 
     //Проверка name и lastName
+        wait.until
+                (ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".display-4")));
 
-     /* Thread.sleep(2000);
-        driver.findElement(By.xpath("//button[@class=\"btn btn-white btn-sidebar sidebar_btn -profile -active\"]")).click();
-        wait.until (ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".profile_name.display-4")));
+        String actualData = new String();
+        actualData = ("Erica")+" "+("Smith");
         String profileName = driver.findElement(By.cssSelector(".display-4")).getText();
-        Assert.assertEquals("Имя/фамилия не совпадают","Erica Smith",profileName);*/
-
-       Thread.sleep(2000);
-       WebElement profileName = driver.findElement(By.className("display-4"));
-       System.out.println(profileName.getText());
+        Assert.assertEquals("Имя/фамилия не совпадают",actualData,profileName);
 
     //Добавить авто
 
-        String currentUrl = driver.getCurrentUrl();
+       /* //Навигация
+
+       String currentUrl = driver.getCurrentUrl();
         System.out.println("Current url " + currentUrl);
         String navigateToUserData = "https://qauto.forstudy.space/panel/garage";
-        driver.navigate().to(navigateToUserData);
+        driver.navigate().to(navigateToUserData); */
 
-        /* driver.findElement(By.className("dropdown-toggle user-nav_toggle")).click();
-         wait.until
-        (ExpectedConditions.invisibilityOfElementLocated(By.xpath("//a[text()=\"Garage\"]")));
-        driver.findElement(By.xpath("//a[text()=\"Garage\"]")).click();*/
-
+        driver.findElement(By.xpath("//a[@routerlink=\"garage\"]")).click();
 
         driver.findElement(By.className("btn-primary")).click();
         driver.findElement(By.id("addCarMileage")).sendKeys("50");
